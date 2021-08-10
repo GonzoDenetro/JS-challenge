@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <p>En esta pequeña aplicación se hace la comparación entre rentar peliculas o verlas por tus servicios de streaming. Compara la opción más barata</p>
+            <p>Lo único que tienes que hacer es poner el número de peliculas que ves al mes y seleccionar los servicios de streaming que tienes</p>
+        </section>
+        <section>
+            <p>*En pesos mexicanos</p>
+            <div>
+                <h3>¿Cuantas películas ves al mes? ($45 c/u)</h3>
+                <input type="text" placeholder="Número de peliculas" id="num_peliculas">
+            </div>
+            <div>
+                <h3>¿Cuales son tus plataformas de streaming?</h3>
+                <div><label for="amazon"><input type="checkbox" value="99" name="amazon" id="amazon">Amazon Prime Video</label>
+                    <label for="netflix"><input type="checkbox" value="139" name="netflix" id="netflix">Netflix</label>
+                    <label for="disney"><input type="checkbox" name="disney" value="159" id="disney">Disney + </label>
+                    <label for="hbo"><input type="checkbox" name="hbo" value="99" id="hbo">HBO Max</label>
+                </div>
+                <button onclick="compare()" type="submit">Comparar</button>
+            </div>
+            <div>
+                <p id="result"></p>
+                <p id="result-value"></p>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
