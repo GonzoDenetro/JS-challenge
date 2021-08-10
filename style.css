@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+}
+
+.icon-link {
+  text-decoration: none;
+}
+
+.fa-github {
+  display: block;
+  text-align: center;
+  color: #fff;
+  transition: color 450ms;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+
+.fa-github:hover {
+  color: #0EB1D2;
+}
+
+body {
+  background: #222;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-container__text {
+  color: #91818A;
+}
+
+.user-movies-container {
+  margin: 30px 0;
+  text-align: center;
+}
+.user-movies-container__title, .streaming-services-container__title {
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.user-movies-container__input {
+  width: 220px;
+  height: 34px;
+  margin: 14px 0;
+  border: 2px solid #0EB1D2;
+  background: transparent;
+  outline: none;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.streaming-services-container {
+  text-align: center;
+}
+.streaming-services {
+  width: 43%;
+  margin: 14px auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.streaming-services__label {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+button {
+  width: 180px;
+  margin: 20px 0;
+  padding: 8px 16px;
+  border: 1px solid #0EB1D2;
+  background: none;
+  border-radius: 20px;
+  color: #0EB1D2;
+  transition: background, box-shadow 450ms;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #0EB1D2;
+  box-shadow: 0 0 5px #0EB1D2, 0 0 25px #0EB1D2, 0 0 50px #0EB1D2, 0 0 100px #0EB1D2;
+}
+
+.result-description {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+.result-value {
+  color: #0EB1D2;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
+}
+
+/*# sourceMappingURL=style.css.map */

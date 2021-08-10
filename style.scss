@@ -1,0 +1,121 @@
+$font: 'Poppins', sans-serif;
+$black: #222;
+$white: #fff;
+$blue: #0EB1D2;
+$gray: #91818A;
+
+@function getREM($size){
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+@mixin font-size($size){
+    font-size: $size;
+    font-size: getREM($size);
+    line-height: getREM($size)*1.5;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    padding: 20px;
+}
+.icon-link {
+    text-decoration: none;
+}
+.fa-github {
+    display: block;
+    text-align: center;
+    color: $white;
+    transition: color 450ms;
+    @include font-size(40px);
+}
+.fa-github:hover {
+    color: $blue;
+}
+body {
+    background: $black;
+    font-family: $font;
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.description-container__text {
+    color: $gray;
+}
+.user-movies-container {
+    margin: 30px 0;
+    text-align: center;
+    &__title {
+        color: $white;
+        @include font-size(20px)
+    }
+    &__input {
+        width: 220px;
+        height: 34px;
+        margin: 14px 0;
+        border: 2px solid $blue;
+        background: transparent;
+        outline: none;
+        padding: 4px 10px;
+        border-radius: 20px;
+        color: $white;
+        @include font-size(16px)
+    }
+}
+.streaming-services-container {
+    text-align: center;
+    &__title {
+        @extend .user-movies-container__title;
+    }
+}
+.streaming-services {
+    width: 43%;
+    margin: 14px auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    &__label {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        color: $white;
+        @include font-size(16px)
+    }
+}
+button {
+    width: 180px;
+    margin: 20px 0;
+    padding: 8px 16px;
+    border: 1px solid $blue;
+    background: none;
+    border-radius: 20px;
+    color: $blue;
+    transition: background, box-shadow 450ms;
+    @include font-size(18px)
+}
+button:hover {
+    color: $white;
+    background-color: $blue;
+    box-shadow: 0 0 5px $blue,
+    0 0 25px $blue,
+    0 0 50px $blue,
+    0 0 100px $blue;
+}
+.result-description {
+    text-align: center;
+    color: $white;
+    @include font-size(18px)
+}
+.result-value {
+    color: $blue;
+    text-align: center;
+    font-weight: 500;
+    @include font-size(30px);
+}
