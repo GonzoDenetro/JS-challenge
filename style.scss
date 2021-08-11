@@ -44,9 +44,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .description-container__text {
     color: $gray;
+    text-align: center;
 }
 .user-movies-container {
     margin: 30px 0;
@@ -95,7 +97,7 @@ button {
     padding: 8px 16px;
     border: 1px solid $blue;
     background: none;
-    border-radius: 20px;
+    border-radius: 30px;
     color: $blue;
     transition: background, box-shadow 450ms;
     @include font-size(18px)
@@ -118,4 +120,34 @@ button:hover {
     text-align: center;
     font-weight: 500;
     @include font-size(30px);
+}
+.error-section {
+    height: 150px;
+    padding: 20px;
+    position: absolute;
+    background: $white;
+    border-radius: 20px;
+    transform: translateY(180px);
+    transition: transform 1.5s;
+    visibility: hidden;
+}
+.erro-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icon-container {
+    position: absolute;
+    right: 1%;
+    top: -2%;
+}
+.fa-times-circle {
+    color: #FF6B6B;
+    cursor: pointer;
+}
+.error {
+    visibility: visible;
+    transform: translateY(-40px);
 }

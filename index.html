@@ -26,7 +26,7 @@
             <p class="description-container__text">*En pesos mexicanos</p>
             <div class="user-movies-container">
                 <h3 class="user-movies-container__title">¿Cuantas películas ves al mes? ($45 c/u)</h3>
-                <input class="user-movies-container__input" type="text" placeholder="Número de peliculas" id="num_peliculas">
+                <input class="user-movies-container__input" type="number" placeholder="Número de peliculas" id="num_peliculas">
             </div>
             <div class="streaming-services-container">
                 <h3 class="streaming-services-container__title">¿Cuales son tus plataformas de streaming?</h3>
@@ -40,7 +40,16 @@
             </div>
             <div>
                 <p id="result" class="result-description"></p>
+                <p class="result-description" id="result-1"></p>
                 <p id="result-value" class="result-value"></p>
+            </div>
+        </section>
+        <section class="error-section" id="error_container">
+            <div class="erro-container">
+                <span class="icon-container">
+                    <i class="far fa-times-circle" id="close"></i>
+                </span>
+                <p>Por favor selecciona algún valor</p>    
             </div>
         </section>
     </main>

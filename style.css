@@ -37,10 +37,12 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .description-container__text {
   color: #91818A;
+  text-align: center;
 }
 
 .user-movies-container {
@@ -95,7 +97,7 @@ button {
   padding: 8px 16px;
   border: 1px solid #0EB1D2;
   background: none;
-  border-radius: 20px;
+  border-radius: 30px;
   color: #0EB1D2;
   transition: background, box-shadow 450ms;
   font-size: 18px;
@@ -124,6 +126,41 @@ button:hover {
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 2.8125rem;
+}
+
+.error-section {
+  height: 150px;
+  padding: 20px;
+  position: absolute;
+  background: #fff;
+  border-radius: 20px;
+  transform: translateY(180px);
+  transition: transform 1.5s;
+  visibility: hidden;
+}
+
+.erro-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon-container {
+  position: absolute;
+  right: 1%;
+  top: -2%;
+}
+
+.fa-times-circle {
+  color: #FF6B6B;
+  cursor: pointer;
+}
+
+.error {
+  visibility: visible;
+  transform: translateY(-40px);
 }
 
 /*# sourceMappingURL=style.css.map */
